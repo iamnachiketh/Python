@@ -55,18 +55,29 @@
 
 
 # Check Leap year
-def check_leapyear(year):
-    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-        print(f"{year} is a leap year.")
-    else:
-        print(f"{year} is not a leap year.")
+# def check_leapyear(year):
+#     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#         print(f"{year} is a leap year.")
+#     else:
+#         print(f"{year} is not a leap year.")
 
-year = int(input("Enter a year: "))
-if 1000 <= year <= 9999: 
-    check_leapyear(year)
+# year = int(input("Enter a year: "))
+# if 1000 <= year <= 9999: 
+#     check_leapyear(year)
+#     exit(0)
+# print("Please entre the 4 digit year")
+
+
+# Power of 2
+def power_of_2(n):
+    for i in range(n):
+        print(2**i)
+
+n = int(input("Enter the number: "))
+if 0 <= n < 31: 
+    power_of_2(n)
     exit(0)
-print("Please entre the 4 digit year")
-
+print("Please enter the number between 0 and 30")
 
 
 
