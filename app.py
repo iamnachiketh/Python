@@ -1,85 +1,69 @@
-# n = int(input("Enter the number: "))
+# lis = []
+# lis1 = [" ", 2.34, False]
 
-# for i in range(2,n):
-#     if(n%i == 0):
-#         print("no")
-#         exit(0) 
+# lis1[1] = 3.142
 
-# print("Yes")
+# print(lis1)
 
-# n = int(input("Enter the number: "))
-# res = 1
-# for i in range(1,n+1):
-#     res = res * i
+# lis.append(10)
 
-# print(res)
+# lis.insert(1, "hello")
 
-# def factorial(n): 
-#     res = 1
-#     for i in range(1,n+1):
-#         res = res * i
-#     print(res)
+# lis1.remove(0)
 
-# n = int(input("Enter the number: "))
+# lis1.pop()
 
-# print(factorial(n))
+number_list = [2, 4.67 ,1 ,9, 87.56]
 
+# lis2.sort()
 
-# Print name dynamicaly
-# def print_message(name):
-#     if(len(name) < 3):
-#         print("Name should be min of 3 characters")
-#         return
-#     print(f"Hello {name}, How are you?")
+# print(lis)
+# print(lis1)
+# print(lis2)
 
-# name = input("Enter the username: ")
-# print_message(name)
+# new_number_list = []
+
+# for i in range(len(number_list)):
+#     new_number_list.append(number_list.pop())
+
+# print(new_number_list)
 
 
-# Percentage of heads vs tails
+# def check_prime(num):
+#     for i in range(2, num):
+#         if(num%i == 0): return False
+#     return True
 
-# import random
-# def probability_calculate(n, hcount, tcount):
-#     for i in range(n):
-#         num = random.random()
-#         if num > 0.5 : tcount = tcount + 1
-#         else: hcount = hcount + 1
-#     return [hcount, tcount]
+# def prime_number(n):
+#     prime_values = []
+#     for i in range(2,n):
+#         if(check_prime(i)):
+#             prime_values.append(i)
+#         else: continue
+#     return prime_values
 
-# n = int(input("Enter the Number of times to flip a coin: "))
-# if(n < 0):
-#     print("Enter the a positive number")
-# else:
-#     res = probability_calculate(n, 0, 0)
-#     print(f"Percentage of heads: {(res[0]/n)*100}\n Percentage of tails: {(res[1]/n)*100}")
+# n = int(input("Enter a number: "))
 
+# print(prime_number(n))
 
-# Check Leap year
-# def check_leapyear(year):
-#     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-#         print(f"{year} is a leap year.")
-#     else:
-#         print(f"{year} is not a leap year.")
+# dict1 = {
+#     "key": 10
+# }
 
-# year = int(input("Enter a year: "))
-# if 1000 <= year <= 9999: 
-#     check_leapyear(year)
-#     exit(0)
-# print("Please entre the 4 digit year")
+# print(dict1["key"])
+# dict1["key"] = 20
 
+# print(dict1["key"])
 
-# Power of 2
-def power_of_2(n):
-    for i in range(n):
-        print(2**i)
+# print(dict1.items())
 
-n = int(input("Enter the number: "))
-if 0 <= n < 31: 
-    power_of_2(n)
-    exit(0)
-print("Please enter the number between 0 and 30")
+def store_value():
+    squ_dict = {}
+    for i in range(1,100):
+        squ_dict[i] = i**2
+    print(squ_dict.items())
 
-
+store_value()
 
 
 
